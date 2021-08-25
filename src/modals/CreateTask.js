@@ -33,7 +33,8 @@ const CreateTask = ({modal, toggle, save}) => {
                          className="form-control" 
                          value={taskName} 
                          onChange={handleChange} 
-                         name="taskName"/>
+                         name="taskName"
+                         maxLength="20"/>
                 </div>
 
                 <div className="form-group mt-2">
@@ -42,7 +43,8 @@ const CreateTask = ({modal, toggle, save}) => {
                             className="form-control" 
                             value={description} 
                             onChange={handleChange} 
-                            name="description">
+                            name="description"
+                            maxLength="100">
 
                   </textarea>
                 </div>
